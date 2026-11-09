@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pagea · Pagea</title><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="brand" href="index.html">Pagea</a>
+<nav><a href="privacy.html"><span data-l="tr">Gizlilik</span><span data-l="en">Privacy</span></a><a href="terms.html"><span data-l="tr">Şartlar</span><span data-l="en">Terms</span></a><a href="support.html"><span data-l="tr">Destek</span><span data-l="en">Support</span></a></nav>
+<div class="lang"><button data-k="tr" onclick="setLang('tr')">TR</button> <button data-k="en" onclick="setLang('en')">EN</button></div></header>
+<main>
+<div data-l="tr">
+<div class="hero"><h1>Pagea</h1><p>Takvimle birleşen not defteri. Her güne bir sayfa; Apple Pencil ile yaz, çiz, fotoğraf ve PDF ekle.</p></div>
+<div class="cards"><div class="card"><h2>Her güne bir sayfa</h2><p>Takvimden günü seç, o günün sayfasına notunu al.</p></div>
+<div class="card"><h2>Pencil ile yaz ve çiz</h2><p>Elyazısı, klavye metni, fotoğraf ve kağıt desenleri bir arada.</p></div>
+<div class="card"><h2>Pagea Pro</h2><p>Tüm temalar, çoklu sayfa, kağıt desenleri, PDF içe/dışa aktarma ve yazı biçimleri. 1 hafta ücretsiz dene.</p></div></div>
+<p class="mute">Notların cihazında ve kendi iCloud hesabında durur. <a href="privacy.html">Gizlilik Politikası</a> · <a href="support.html">Destek</a></p></div>
+<div data-l="en">
+<div class="hero"><h1>Pagea</h1><p>A notebook that works with your calendar. One page per day: write and draw with Apple Pencil, add photos and PDFs.</p></div>
+<div class="cards"><div class="card"><h2>One page for every day</h2><p>Pick a day in the calendar and take notes on that day's page.</p></div>
+<div class="card"><h2>Write and draw with Pencil</h2><p>Handwriting, typed text, photos and paper patterns together.</p></div>
+<div class="card"><h2>Pagea Pro</h2><p>All themes, multiple pages per day, paper patterns, PDF import/export and text formatting. Try it free for 1 week.</p></div></div>
+<p class="mute">Your notes stay on your device and in your own iCloud. <a href="privacy.html">Privacy Policy</a> · <a href="support.html">Support</a></p></div>
+</main>
+<footer>© 2026 Pagea · <span data-l="tr">Yayıncı: Volkan Ugur</span><span data-l="en">Publisher: Volkan Ugur</span></footer>
+<script>
+(function(){var s;try{s=localStorage.getItem('lang')}catch(e){}
+var l=s||((navigator.language||'en').toLowerCase().indexOf('tr')==0?'tr':'en');
+function set(x){document.documentElement.lang=x;try{localStorage.setItem('lang',x)}catch(e){}
+document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.k==x)})}
+window.setLang=set;document.addEventListener('DOMContentLoaded',function(){set(l)});set(l)})();
+</script></body></html>

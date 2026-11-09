@@ -1,0 +1,17 @@
+
+:root{--accent:#0f766e;--bg:#fff;--fg:#1c1c1e;--mute:#6b7280;--line:#e5e7eb}
+@media(prefers-color-scheme:dark){:root{--bg:#111;--fg:#f3f4f6;--mute:#9ca3af;--line:#2a2a2a;--accent:#2dd4bf}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+header,main,footer{max-width:760px;margin:0 auto;padding:20px 20px}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-bottom:1px solid var(--line)}
+header a.brand{font-weight:700;font-size:20px;color:var(--accent);text-decoration:none}
+nav a{margin-right:14px;color:var(--fg);text-decoration:none;font-size:15px}nav a:hover{color:var(--accent)}
+.lang button{background:none;border:1px solid var(--line);color:var(--fg);padding:4px 10px;border-radius:8px;cursor:pointer;font-size:14px}
+.lang button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+h1{font-size:32px;margin:.6em 0 .2em}h2{font-size:20px;margin:1.6em 0 .3em}p,li{margin:.5em 0}
+.mute{color:var(--mute);font-size:14px}a{color:var(--accent)}
+.hero{text-align:center;padding:40px 0 10px}.hero h1{font-size:42px}
+.cards{display:grid;gap:14px;margin-top:20px}.card{border:1px solid var(--line);border-radius:14px;padding:6px 18px}
+footer{border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+[data-l]{display:none}html[lang=tr] [data-l=tr],html[lang=en] [data-l=en]{display:block}
+html[lang=tr] span[data-l=tr],html[lang=en] span[data-l=en]{display:inline}
